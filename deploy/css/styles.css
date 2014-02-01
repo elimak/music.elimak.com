@@ -1,0 +1,89 @@
+body {
+    background: #fff;
+    color: #666;
+    font: 85%/140% Arial, Helvetica, sans-serif;
+    max-width: 96%;
+    margin: 0 auto;
+    padding-top: 74px;
+}
+
+.dropdown-menu {
+    max-height: 400px;
+    overflow-y: scroll;
+    width: 220px;
+}
+
+.list-item {
+    padding-top: 6px;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+
+.no-reports {
+    display: none;
+}
+/* col */
+#first {
+    width: 290px;
+    float: left;
+    padding: 10px 0px;
+}
+
+#middle {
+    width: 380px; /* Account for margins + border values */
+    float: left;
+    padding: 10px 10px;
+    margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+    width: 200px;
+    padding: 5px 15px;
+    float: left;
+}
+
+.titles{
+    color: white;
+    text-decoration: none;
+    background-color: #777;
+    padding-left: 5px;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+.pagination a {
+
+    padding: 0 4px;
+    line-height: 20px;
+    text-decoration: none;
+    border: 0px solid #DDD;
+    border-left-width: 0;
+
+}
+.pagination {
+    height: 20px;
+    display: table;
+    margin: 0 auto;
+    width:100%;
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 40px;
+    z-index: 1010;
+    margin-bottom: 20px;
+
+    background-color: #ddd;
+}
+.active{
+    background-color: #aaa;
+    color:#fff;
+}
+
+.pagenr{
+    display: table;
+    margin: 0 auto;
+}
+.navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1000px;
+}

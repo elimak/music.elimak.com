@@ -1,0 +1,31 @@
+<iframe src="https://embed.spotify.com/?uri=<%= spotifyHref %>" width="250" height="80" frameborder="0" allowtransparency="true"></iframe>
+<div class="list-item"><b>
+    <% _.each( artists, function( artist ){ %>
+        <% var link='http://www.discogs.com/artist/'+artist %>
+        <a href="<%- link %>" target="_blank"><%- artist %></a>
+
+    <% }); %>
+- <%= title %></b></br></br>
+    <% _.each( labels, function( label ){ %>
+        <% var link='http://www.discogs.com/label/'+label %>
+        <a href="<%- link %>" target="_blank"> <%- label %></a>
+
+    <% }); %>
+    - <%= year %> - <%= country %></br>
+Spotify Populatrity: <%= popularity %> - Indexation score: <%= tagsScore %></br>
+    <% var link='http://www.discogs.com/explore?style='+styles.split(", ").join("&style=") %>
+    <a href="<%- link %>" target="_blank">Styles</a>:
+    <% _.each( styles.split(", "), function( style ){ %>
+        <% var link='http://www.discogs.com/explore?style='+style %>
+        <a href="<%- link %>" target="_blank"> <%- style %></a>
+
+    <% }); %>
+    </br>
+    Genres:
+    <% _.each( genres.split(", "), function( genre ){ %>
+        <% var link='http://www.discogs.com/explore?genre='+genre %>
+        <a href="<%- link %>" target="_blank"> <%- genre %></a>
+    <% }); %>
+
+</br></br></div>
+
